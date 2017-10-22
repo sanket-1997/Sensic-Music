@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView_display_album_album_art"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/default_album_art_track" />
+
+    <TextView
+        android:id="@+id/textView_display_album_album_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="middle"
+        android:textColor="@color/defaultTextColor"
+        android:layout_alignEnd="@+id/imageView_display_album_album_art"
+        android:layout_alignStart="@+id/imageView_display_album_album_art"
+        android:layout_below="@+id/imageView_display_album_album_art"
+        android:text="TextView"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView_display_album_album_art"
+        android:layout_alignBottom="@+id/textView_display_album_album_name" />
+</RelativeLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.musicplayer.integrated.sanket.music.ActivityEqualizer"
+    android:orientation="vertical"
+    android:weightSum="7"
+    >
+
+    <RelativeLayout
+        android:id="@+id/equalizer_title_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/textView_equalizer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Equalizer"
+            android:textColor="@color/highLightColor"
+            android:textSize="22sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_equalizer_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_equalizer_title"
+            android:layout_alignParentEnd="true"
+            android:theme="@style/SwitchCustomTheme"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/basic_equalizer_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+
+        >
+
+        <TextView
+            android:id="@+id/textView_equalizer_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Default"
+            android:textColor="@color/highLightColor"
+            android:background="@drawable/custom_list_background_ripple_v21"
+            android:clickable="true"
+            android:onClick="defaultButton"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_basic_seek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="75Hz - 225Hz"
+                android:textColor="@color/highLightColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <SeekBar
+                android:id="@+id/seekBar_basic_seek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/textView_basic_seek1"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressTint="@color/highLightColor"
+                android:splitTrack="true"
+                android:thumbTint="@color/highLightColor"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r1"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textView_basic_seek2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="200Hz - 600Hz"
+                android:textColor="@color/highLightColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <SeekBar
+                android:id="@+id/seekBar_basic_seek2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/textView_basic_seek2"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressTint="@color/highLightColor"
+                android:splitTrack="true"
+                android:thumbTint="@color/highLightColor"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r2"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textView_basic_seek3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="550Hz - 1kHz"
+                android:textColor="@color/highLightColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <SeekBar
+                android:id="@+id/seekBar_basic_seek3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/textView_basic_seek3"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressTint="@color/highLightColor"
+                android:splitTrack="true"
+                android:thumbTint="@color/highLightColor" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r3"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textView_basic_seek4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="1kHz - 5kHz"
+                android:textColor="@color/highLightColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <SeekBar
+                android:id="@+id/seekBar_basic_seek4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/textView_basic_seek4"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressTint="@color/highLightColor"
+                android:splitTrack="true"
+                android:thumbTint="@color/highLightColor" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r4"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/textView_basic_seek5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="4kHz - 6kHz"
+                android:textColor="@color/highLightColor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <SeekBar
+                android:id="@+id/seekBar_basic_seek5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/textView_basic_seek5"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progressTint="@color/highLightColor"
+                android:splitTrack="true"
+                android:thumbTint="@color/highLightColor" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

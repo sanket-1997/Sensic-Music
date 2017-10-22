@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sensic Music</string>
+
+
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="guide1">Play Pause Sensor controls the music state by hovering hand over the proximity sensor. It works only when the application is in the view.
+    </string>
+    <string name="guide2">Next Track Sensor changes the track with shake. It works even when the application is not in the view.</string>
+    <string name="guide3">Music Visualizer draws music pattern in full player.</string>
+    <string name="guide4">The app comes with built in equalizer. Disable system\'s equalizer for effective use.</string>
+    <string name="guide5">You can fling left or right to change the track in full player.</string>
+    <string name="note1">It\'s Recommended to disable Next Track Sensor while running , cycling , etc.</string>
+    <string name="note2">EXPERIMENTAL:Songs are listed in "Soft" and "Hard" lists on the basis of data analysis at medium-high volume. Actual result may vary from the expected one.</string>
+
+
+</resources>

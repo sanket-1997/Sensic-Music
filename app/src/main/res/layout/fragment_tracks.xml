@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.musicplayer.integrated.sanket.music.FragmentAllTracks"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    >
+
+
+
+
+    <com.l4digital.fastscroll.FastScrollRecyclerView
+
+
+        android:id="@+id/recylcerView_all_tracks_fragment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:bubbleColor="#7D1DCAFF"
+        app:bubbleTextColor="@color/defaultTextColor"
+        app:handleColor="@color/colorPrimary"
+        app:trackColor="@color/colorAccent"
+        app:hideScrollbar="true"
+        app:showTrack="true"
+        android:layout_marginLeft="10dp"
+       />
+
+
+
+</RelativeLayout>
+

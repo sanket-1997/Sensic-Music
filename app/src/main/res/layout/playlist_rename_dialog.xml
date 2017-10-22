@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_color"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="30dp"
+        android:text="Rename Playlist" />
+
+    <EditText
+        android:id="@+id/editText_playlist_rename_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Rename..."
+        android:textColorHint="#c9c8c8"
+        android:textSize="15sp"
+        android:theme="@style/CustomEditText"
+        android:inputType="text"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+
+        <TextView
+            android:id="@+id/textView_playlist_rename_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Cancel"
+            android:gravity="center"
+            android:background="@drawable/custom_list_background_ripple_v21"
+            android:clickable="true"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textView_playlist_rename_rename"
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/custom_list_background_ripple_v21"
+            android:clickable="true"
+            android:text="Rename" />
+    </LinearLayout>
+
+
+</LinearLayout>

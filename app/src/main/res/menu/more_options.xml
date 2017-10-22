@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_more_action_about_dev" android:title="About"/>
+    <item android:id="@+id/menu_more_action_guide" android:title="Guide"/>
+    <item android:id="@+id/menu_more_action_equalizer" android:title="Equalizer"/>
+    <item android:id="@+id/menu_more_action_settings" android:title="Settings"/>
+
+
+
+
+</menu>

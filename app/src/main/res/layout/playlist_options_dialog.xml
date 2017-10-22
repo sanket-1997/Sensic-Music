@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TextView
+        android:id="@+id/textView_playlist_options_delete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@drawable/custom_list_background_ripple_v21"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Delete"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/textView_playlist_options_rename"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@drawable/custom_list_background_ripple_v21"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Rename"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+</LinearLayout>

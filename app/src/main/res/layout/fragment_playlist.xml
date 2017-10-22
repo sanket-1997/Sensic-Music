@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/playlist_fragment_container">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout2"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="1dp"
+                    >
+
+
+
+                    <ImageView
+                        android:id="@+id/playlist_soft"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/soft"
+
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soft"
+                        android:textSize="20sp"
+                        android:textColor="@color/defaultTextColor"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/playlist_soft_ripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:background="@drawable/custom_list_background_ripple_v21"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="1dp"
+                    >
+
+
+
+                    <ImageView
+                        android:id="@+id/playlist_hard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:scaleType="centerCrop"
+
+                        app:srcCompat="@drawable/hard" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hard"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/defaultTextColor"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:id="@+id/playlist_hard_ripple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:background="@drawable/custom_list_background_ripple_v21"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView_create_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE PLAYLIST +"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="22sp"
+                android:background="#328b8686"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentStart="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_create_list"
+                android:id="@+id/recylcerView_playList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
